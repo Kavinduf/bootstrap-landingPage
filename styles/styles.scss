@@ -8,18 +8,68 @@ div {
   //   border: 2px solid red;
   font-family: $font;
 }
+body {
+  overflow-x: hidden;
+}
+
+.img-fluid {
+  width: 100%;
+}
+
+.header-img {
+  position: relative;
+}
+
+.show-navbar {
+  height: 400px !important;
+}
+
+.navbar {
+  display: grid !important;
+  height: 0px;
+  overflow: hidden !important;
+  transition: 0.5s;
+  justify-content: center !important;
+}
+
+#navbar {
+  display: none;
+}
+
+.header-inside {
+  background-color: rgb(0, 0, 0, 0.7);
+  position: absolute;
+  bottom: 4%;
+  right: 7%;
+  height: 350px;
+  width: 730px;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+}
+
+.header-inside-text-top {
+  color: white;
+  font-size: 90px;
+  font-family: "Times New Roman", Times, serif;
+}
+.header-inside-text-bottom {
+  color: $orange;
+  font-size: 70px;
+  font-family: "Times New Roman", Times, serif;
+}
 
 #companyName {
   font-size: 30px;
   color: $orange;
+  font-weight: 500;
 }
 
 #header {
   background: $gray;
   color: white;
   font-size: 25px;
-
-  //
 }
 
 #nav-button {
@@ -28,7 +78,110 @@ div {
     background: #759199;
   }
 }
+
+#img-container {
+  display: flex;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
 #teams-heading {
   font-size: 70px;
   color: rgb(221, 128, 35);
+}
+
+.teams-heading {
+  margin-top: 7rem;
+}
+
+.line-container {
+  display: grid;
+  justify-content: center;
+}
+
+.line {
+  max-width: 80% !important;
+  //   height: 50px !important;
+  border: 2px solid rgb(146, 76, 6);
+}
+
+#teams-text {
+  font-size: 25px;
+  font-weight: 500;
+}
+
+#person-name {
+  display: grid;
+  justify-content: center;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+#person-text {
+  font-size: 25px;
+  font-weight: 500;
+  max-width: 90%;
+}
+
+#footer-container {
+  background-color: black;
+  color: white;
+  font-size: 20px;
+  margin-top: 200px;
+
+  div {
+    margin-left: 50px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  #teams-heading {
+    font-size: 30px;
+  }
+  .teams-heading {
+    margin-top: 2rem;
+  }
+  #person-text {
+    font-size: 17px;
+    max-width: none;
+  }
+  #teams-text {
+    font-size: 17px;
+  }
+  #img-container {
+    max-width: 100% !important;
+  }
+
+  .header-inside {
+    height: 250px;
+    width: 500px;
+  }
+  .header-inside-text-top {
+    font-size: 40px;
+  }
+  .header-inside-text-bottom {
+    font-size: 30px;
+  }
+
+  #footer-container {
+    font-size: 17px;
+    margin-top: 150px;
+
+    div {
+      margin-left: 10px;
+    }
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .header-inside {
+    height: 120px;
+    width: 250px;
+  }
+  .header-inside-text-top {
+    font-size: 25px;
+  }
+  .header-inside-text-bottom {
+    font-size: 15px;
+  }
 }
