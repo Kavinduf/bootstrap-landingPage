@@ -1,0 +1,34 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;800&display=swap");
+
+$font: Poppins;
+$orange: rgb(237, 149, 62);
+$gray: #898e8f;
+
+div {
+  //   border: 2px solid red;
+  font-family: $font;
+}
+
+#companyName {
+  font-size: 30px;
+  color: $orange;
+}
+
+#header {
+  background: $gray;
+  color: white;
+  font-size: 25px;
+
+  //
+}
+
+#nav-button {
+  &:hover {
+    color: black;
+    background: #759199;
+  }
+}
+#teams-heading {
+  font-size: 70px;
+  color: rgb(221, 128, 35);
+}

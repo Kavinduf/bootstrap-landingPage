@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;800&display=swap");
+div {
+  font-family: Poppins;
+}
+
+#companyName {
+  font-size: 30px;
+  color: rgb(237, 149, 62);
+}
+
+#header {
+  background: #898e8f;
+  color: white;
+  font-size: 25px;
+}
+
+#nav-button:hover {
+  color: black;
+  background: #759199;
+}
+
+#teams-heading {
+  font-size: 70px;
+  color: rgb(221, 128, 35);
+}/*# sourceMappingURL=styles.css.map */
